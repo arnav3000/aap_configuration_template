@@ -8,11 +8,11 @@ all:
         connection: local
     automationcontroller:
       hosts:
-        HERE:
+        192.168.0.21:
 
     automationhub:
       hosts:
-        HERE:
+        192.168.0.5:
 
     # can be automationhub if you do not have a specific server for this
     builder:
@@ -22,7 +22,7 @@ all:
     # only needed if installing AAP with automation, can be removed if you are not
     database:
       hosts:
-        HERE:
+        192.168.0.145:
   vars:
     env: dev
 ...
