@@ -2,4 +2,5 @@
 controller_settings_all:
   settings:
     GALAXY_IGNORE_CERTS: true
+    REDHAT_USERNAME: "{{ REDHAT_USERNAME_VAULT }}"
 ...
