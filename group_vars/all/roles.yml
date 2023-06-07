@@ -7,4 +7,20 @@ controller_roles_all:
   - user: api_user
     team: config_as_code_admin
     role: member
+
+  - user: John
+    team: dev_team
+    role: member
+
+  - user: Ram
+    team: dev_team
+    role: member
+
+  - user: Sita
+    team: admin_team
+    role: admin
+
+  - user: Maria
+    team: admin_team
+    role: admin
 ...

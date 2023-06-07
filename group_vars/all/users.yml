@@ -6,18 +6,14 @@ controller_user_accounts_all:
   - user: John
     is_superuser: false
     password: "{{ USER_PASS }}"
-    team: dev_team
   - user: Ram
     is_superuser: false
     password: "{{ USER_PASS }}"
-    team: dev_team
   - user: Sita
     is_superuser: false
     password: "{{ USER_PASS }}"
-    team: admin_team
   - user: Maria
     is_superuser: false
     password: "{{ USER_PASS }}"
-    team: admin_team
     
 ...
