@@ -60,3 +60,10 @@ Acquire your token at [redhat api](https://access.redhat.com/management/api/) se
 `ansible-playbook -i inventory_dev.yml -l dev playbooks/install_configure.yml --ask-vault-pass -e "env=dev"`
 
 Acquire your token at [redhat api](https://access.redhat.com/management/api/) see [access article](https://access.redhat.com/articles/3626371)
+
+
+### Pre-requisites
+
+1) Running 3 VMs(1 controller, 1 DB, 1 automationhub) for RHEL-8.6 
+2) ssh keys generated and exchagned in all 3 mahcines
+3) Run this as a root user.

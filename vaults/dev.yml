@@ -117,7 +117,13 @@ root_machine_pass: !vault |
 #ah_token_password: 'this will create and use this password can be generated'
 #controller_pass: 'admin account pass for controller, if none is given it will default to Password1234!'
 #controller_api_user_pass: 'this will create and use this password can be generated'
-#ah_pass: 'hub admin account pass, if none is given it will default to Password1234!'
+ah_pass: !vault |
+    $ANSIBLE_VAULT;1.1;AES256
+    65363436616535363538356632666130393864356164306230373263336363323537616438386562
+    6265646137333835656536623736363761333731363435350a616535376561343563353836393964
+    35303537653661613537633031376534336331356539316532303863646431376365393564343464
+    3963313632653066350a636331636239633637323863646234373833336130363634363233333239
+    3832
 #vault_pass: 'the password to decrypt this vault'
 aap_setup_down_offline_token: !vault |
     $ANSIBLE_VAULT;1.1;AES256
