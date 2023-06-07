@@ -6,7 +6,7 @@ controller_roles_all:
 
   - team: admin_team
     organization: org_unix
-    role: admin
+    role: execute
 
   - team: dev_admin
     organization: org_storage
@@ -26,9 +26,9 @@ controller_roles_all:
 
   - user: Sita
     team: admin_team
-    role: admin
+    role: member
 
   - user: Maria
     team: admin_team
-    role: admin
+    role: member
 ...
