@@ -3,4 +3,17 @@ controller_user_accounts_all:
   - user: api_user
     is_superuser: false
     password: '{{ controller_api_user_pass }}'
+  - user: John
+    password: "{{ USER_PASS }}"
+    team: dev_team
+  - user: Ram
+    password: "{{ USER_PASS }}"
+    team: dev_team
+  - user: Sita
+    password: "{{ USER_PASS }}"
+    team: admin_team
+  - user: Maria
+    password: "{{ USER_PASS }}"
+    team: admin_team
+    
 ...

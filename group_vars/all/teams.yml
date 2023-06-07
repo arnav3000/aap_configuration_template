@@ -2,4 +2,8 @@
 controller_teams_all:
   - name: config_as_code_admin
     organization: config_as_code
+  - name: admin_team
+    organization: org_unix
+  - name: dev_team
+    organization: org_storage
 ...
