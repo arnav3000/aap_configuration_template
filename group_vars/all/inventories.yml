@@ -3,4 +3,7 @@ controller_inventories_all:
   - name: config_as_code
     description: inventory for configuring as code
     organization: config_as_code
+  - name: devconf_test
+    description: inventory for DevConf2023
+    organization: devconf_admin_team
 ...
