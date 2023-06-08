@@ -1,14 +1,14 @@
 ---
 controller_templates_dev:
-  - name: controller_config_dev
+  - name: jt_configure_rhel86
     project: config_as_code_dev
     job_type: run
-    playbook: playbooks/controller_config.yml
-    inventory: config_as_code_dev
+    playbook: provision_rhel86.yml
+    inventory: devconf_prj_inventory
     execution_environment: supported
     concurrent_jobs_enabled: false
     ask_variables_on_launch: true
-    verbosity: 0
+    verbosity: 2
     credentials:
       - aap_admin
       - ah_token_user
