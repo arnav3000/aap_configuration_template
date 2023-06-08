@@ -9,10 +9,4 @@ controller_organizations_all:
 
   - name: Default
     state: absent
-
-  - name: org_unix
-    state: present
-
-  - name: org_storage
-    state: present
 ...

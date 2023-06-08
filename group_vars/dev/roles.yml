@@ -1,3 +1,18 @@
 ---
-controller_roles_dev: []
+controller_roles_dev:
+  - team: devconf_admin_team
+    organization: org_unix
+    role: execute
+
+  - team: devconf_dev_team
+    organization: org_storage
+    role: execute
+
+  - user: john
+    team: devconf_dev_team
+    role: member
+
+  - user: sita
+    team: devconf_admin_team
+    role: member
 ...

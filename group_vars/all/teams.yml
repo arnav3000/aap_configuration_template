@@ -2,11 +2,5 @@
 controller_teams_all:
   - name: config_as_code_admin
     organization: config_as_code
-  - name: devconf_admin_team
-    organization: org_unix
-    description: This is the Admin team for Unix organisation
-  - name: devconf_dev_team
-    organization: org_storage
-    description: This is the Development team in the organisation
 
 ...

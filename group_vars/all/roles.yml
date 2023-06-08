@@ -7,21 +7,5 @@ controller_roles_all:
   - user: api_user
     team: config_as_code_admin
     role: member
-
-  - team: devconf_admin_team
-    organization: org_unix
-    role: execute
-
-  - team: devconf_dev_team
-    organization: org_storage
-    role: execute
-
-  - user: john
-    team: devconf_dev_team
-    role: member
-
-  - user: sita
-    team: devconf_admin_team
-    role: member
     
 ...

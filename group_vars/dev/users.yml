@@ -1,3 +1,11 @@
 ---
-controller_user_accounts_dev: []
+controller_user_accounts_dev:
+  - user: john
+    password: '{{ USER_PASS }}'
+  - user: ram
+    password: '{{ USER_PASS }}'
+  - user: sita
+    password: '{{ USER_PASS }}'
+  - user: hanuman
+    password: "{{ USER_PASS }}"
 ...
