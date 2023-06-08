@@ -3,13 +3,13 @@ controller_user_accounts_all:
   - user: api_user
     is_superuser: false
     password: '{{ controller_api_user_pass }}'
-  - user: John
-    password: "{{ USER_PASS }}"
-  - user: Ram
-    password: "{{ USER_PASS }}"
-  - user: Sita
-    password: "{{ USER_PASS }}"
-  - user: Maria
+  - user: john
+    password: '{{ USER_PASS }}'
+  - user: ram
+    password: '{{ USER_PASS }}'
+  - user: sita
+    password: '{{ USER_PASS }}'
+  - user: hanuman
     password: "{{ USER_PASS }}"
     
 ...
