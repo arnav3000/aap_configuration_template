@@ -21,6 +21,6 @@ controller_projects_dev:
     scm_clean: true
     scm_update_on_launch: false
     scm_credential: ""
-    update_project: true
+    update_project: false
     wait: true
 ...
