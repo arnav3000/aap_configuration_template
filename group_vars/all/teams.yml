@@ -4,6 +4,9 @@ controller_teams_all:
     organization: config_as_code
   - name: admin_team
     organization: org_unix
+    description: This is the Admin team for Unix organisation
   - name: dev_team
     organization: org_storage
+    description: This is the Development team in the organisation
+
 ...
