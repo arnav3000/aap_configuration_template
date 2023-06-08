@@ -8,5 +8,16 @@ controller_roles_all:
     team: config_as_code_admin
     role: member
 
+  - team: "admin_team"
+    organization: org_unix
+    role: admin
+
   - team: "dev_team"
+    organization: org_storage
+    role: execute
+
+  - user: John
+    team: "dev_team"
+    role: member
+    
 ...
