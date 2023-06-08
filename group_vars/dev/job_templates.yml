@@ -6,7 +6,7 @@ controller_templates_dev:
     inventory: devconf_test
     execution_environment: supported
     concurrent_jobs_enabled: false
-    ask_variables_on_launch: false
+    ask_variables_on_launch: true
     verbosity: 2
     credentials:
       - aap_admin
