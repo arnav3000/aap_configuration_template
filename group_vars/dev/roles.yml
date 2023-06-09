@@ -2,15 +2,19 @@
 controller_roles_dev:
   - team: team_unix_admin_devconf
     organization: org_unix
-    role: admin
+    role: execute
 
   - team: team_unix_dev_devconf
     organization: org_unix
     role: execute
 
+  - team: team_unix_dev_devconf
+    organization: org_unix
+    role: job_template_admin
+
   - team: team_storage_admin_devconf
     organization: org_storage
-    role: admin
+    role: execute
 
   - team: team_storage_dev_devconf
     organization: org_storage
