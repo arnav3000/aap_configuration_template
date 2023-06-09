@@ -23,7 +23,7 @@ controller_roles_dev:
   - team: team_storage_dev_devconf
     job_templates:
       - jt_configure_rhel86
-    role: update
+    role: execute_role
 
   - user: john
     team: team_storage_dev_devconf
