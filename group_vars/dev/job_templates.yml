@@ -6,22 +6,22 @@ controller_templates_dev:
     inventory: devconf_test
     execution_environment: supported
     concurrent_jobs_enabled: false
-    ask_variables_on_launch: true
-    verbosity: 2
+    ask_variables_on_launch: false
+    verbosity: 0
     credentials:
       - aap_admin
     extra_vars:
       # for debugging errors with creds change to false
       controller_configuration_credentials_secure_logging: true
 
-  - name: jt_configure_cron_rhel86
+  - name: jt_configure_services_rhel86
     project: devconf_prj_role
     playbook: provision_services_rhel86.yml
     inventory: devconf_test
     execution_environment: supported
     concurrent_jobs_enabled: false
-    ask_variables_on_launch: true
-    verbosity: 2
+    ask_variables_on_launch: false
+    verbosity: 0
     credentials:
       - aap_admin
     extra_vars:
