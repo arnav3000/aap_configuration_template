@@ -4,7 +4,7 @@ controller_templates_dev:
     project: devconf_prj_role
     playbook: provision_webserver_rhel86.yml
     inventory: devconf_test
-    execution_environment: supported
+    execution_environment: 'Control Plane Execution Environment'
     concurrent_jobs_enabled: false
     ask_variables_on_launch: false
     verbosity: 0
@@ -18,7 +18,7 @@ controller_templates_dev:
     project: devconf_prj_role
     playbook: provision_services_rhel86.yml
     inventory: devconf_test
-    execution_environment: supported
+    execution_environment: 'Control Plane Execution Environment'
     concurrent_jobs_enabled: false
     ask_variables_on_launch: false
     verbosity: 0
