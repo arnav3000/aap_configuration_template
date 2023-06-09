@@ -1,18 +1,43 @@
 ---
 controller_roles_dev:
-  - team: devconf_admin_team
+  - team: team_unix_admin_devconf
+    organization: org_unix
+    role: admin
+
+  - team: team_unix_dev_devconf
     organization: org_unix
     role: execute
 
-  - team: devconf_dev_team
+  - team: team_unix_dev_devconf
+    organization: org_unix
+    role: job_template_admin
+
+  - team: team_storage_admin_devconf
+    organization: org_storage
+    role: admin
+
+  - team: team_storage_dev_devconf
     organization: org_storage
     role: execute
 
+  - team: team_storage_dev_devconf
+    job_templates:
+      - jt_configure_rhel86
+    role: update
+
   - user: john
-    team: devconf_dev_team
+    team: team_storage_dev_devconf
     role: member
 
   - user: sita
-    team: devconf_admin_team
+    team: team_unix_dev_devconf
+    role: member
+
+  - user: hanuman
+    team: team_storage_admin_devconf
+    role: member
+
+  - user: ram
+    team: team_unix_admin_devconf
     role: member
 ...
