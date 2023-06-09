@@ -16,7 +16,7 @@ controller_templates_dev:
 
   - name: jt_configure_cron_rhel86
     project: devconf_prj_role
-    playbook: provision_cron_rhel86.yml
+    playbook: provision_services_rhel86.yml
     inventory: devconf_test
     execution_environment: supported
     concurrent_jobs_enabled: false
