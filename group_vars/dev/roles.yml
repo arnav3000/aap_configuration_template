@@ -1,5 +1,21 @@
 ---
 controller_roles_dev:
+  - user: john
+    target_team: team_storage_dev_devconf
+    role: member
+    
+  - user: sita
+    target_team: team_unix_dev_devconf
+    role: member
+
+  - user: hanuman
+    target_team: team_storage_admin_devconf
+    role: member
+
+  - user: ram
+    target_team: team_unix_admin_devconf
+    role: member
+    
   - team: team_unix_admin_devconf
     organization: org_unix
     role: execute
@@ -26,19 +42,5 @@ controller_roles_dev:
       - jt_configure_services_rhel86
     role: execute
 
-  - user: john
-    target_team: team_storage_dev_devconf
-    role: member
-    
-  - user: sita
-    target_team: team_unix_dev_devconf
-    role: member
 
-  - user: hanuman
-    target_team: team_storage_admin_devconf
-    role: member
-
-  - user: ram
-    target_team: team_unix_admin_devconf
-    role: member
 ...
