@@ -22,8 +22,8 @@ controller_roles_dev:
 
   - team: team_storage_dev_devconf
     job_templates:
-      - jt_configure_rhel86
-      - jt_configure_cron_rhel86
+      - jt_configure_webserver_rhel86
+      - jt_configure_services_rhel86
     role: execute
 
   - user: john

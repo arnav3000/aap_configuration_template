@@ -1,6 +1,0 @@
----
-controller_inventories_dev:
-  - name: devconf_test
-    description: inventory for DevConf2023
-    organization: org_unix
-...
