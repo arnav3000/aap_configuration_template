@@ -1,34 +1,34 @@
 ---
 controller_roles_dev:
   - user: john
-    target_teams: team_storage_dev_devconf
+    target_team: team_storage_dev_devconf
     role: member
     
   - user: sita
-    target_teams: team_unix_dev_devconf
+    target_team: team_unix_dev_devconf
     role: member
 
   - user: hanuman
-    target_teams: team_storage_admin_devconf
+    target_team: team_storage_admin_devconf
     role: member
 
   - user: ram
-    target_teams: team_unix_admin_devconf
+    target_team: team_unix_admin_devconf
     role: member
 
-  - teams: team_unix_admin_devconf
+  - team: team_unix_admin_devconf
     organization: org_unix
     role: execute
 
-  - teams: team_unix_dev_devconf
+  - team: team_unix_dev_devconf
     organization: org_unix
     role: execute
 
-  - teams: team_unix_dev_devconf
+  - team: team_unix_dev_devconf
     organization: org_unix
     role: job_template_admin
 
-  - teams: team_storage_admin_devconf
+  - team: team_storage_admin_devconf
     organization: org_storage
     role: execute
 
