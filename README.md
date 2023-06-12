@@ -73,4 +73,4 @@ Acquire your token at [redhat api](https://access.redhat.com/management/api/) se
 
 1) Create new vaulted values with username and passwords for vaults and replace the values in vaults/opentlc.yml file
 
-`ansible-playbook -i inventory_opentlc.yml -l dev playbooks/controller_config_opentlc.yml --ask-vault-pass -e "env=opentlc" -e "no_log=false"`
+`ansible-playbook --vault-id vaults/opentlc.yml -i inventory_opentlc.yml -l dev playbooks/controller_config_opentlc.yml --ask-vault-pass -e "env=opentlc" -e "no_log=false"`
