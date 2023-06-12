@@ -67,3 +67,10 @@ Acquire your token at [redhat api](https://access.redhat.com/management/api/) se
 1) Running 3 VMs(1 controller, 1 DB, 1 automationhub) for RHEL-8.6 
 2) ssh keys generated and exchagned in all 3 mahcines
 3) Run this as a root user.
+4) 
+
+### To run this on Open TLC environment use below command :
+
+1) Create new vaulted values with username and passwords for vaults and replace the values in vaults/opentlc.yml file
+
+`ansible-playbook -i inventory_opentlc.yml -l dev playbooks/controller_config_opentlc.yml --ask-vault-pass -e "env=opentlc" -e "no_log=false"`

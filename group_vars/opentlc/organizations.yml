@@ -1,0 +1,8 @@
+---
+controller_organizations_dev:
+  - name: org_unix
+    state: present
+
+  - name: org_storage
+    state: present
+...

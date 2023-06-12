@@ -1,0 +1,15 @@
+---
+controller_teams_dev:
+  - name: team_unix_admin_devconf
+    organization: org_unix
+    description: This is the Admin team for Unix organisation
+  - name: team_unix_dev_devconf
+    organization: org_unix
+    description: This is the Dev team for Unix organisation
+  - name: team_storage_dev_devconf
+    organization: org_storage
+    description: This is the Development team for Storage organisation
+  - name: team_storage_admin_devconf
+    organization: org_storage
+    description: This is the Admin team in the Storage organisation
+...

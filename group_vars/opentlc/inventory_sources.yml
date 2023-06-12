@@ -1,0 +1,13 @@
+---
+controller_inventory_sources_dev:
+  - name: devconf_inv_src
+    organization: org_unix
+    source: scm
+    source_project: devconf_prj_inventory
+    source_path: "hosts.yml"
+    inventory: devconf_test
+    credential: ""
+    overwrite: true
+    overwrite_vars: true
+    update_cache_timeout: 0
+...
