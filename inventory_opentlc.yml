@@ -12,7 +12,7 @@ all:
 
     automationhub:
       hosts:
-        192.168.0.204:
+        hub-student.6cx4z.example.opentlc.com:
 
     # can be automationhub if you do not have a specific server for this
     builder:
