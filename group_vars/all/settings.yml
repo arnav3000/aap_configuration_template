@@ -1,3 +1,7 @@
 ---
-controller_settings_all: []
+controller_settings_all:
+  settings:
+    GALAXY_IGNORE_CERTS: true
+    REDHAT_USERNAME: "{{ REDHAT_USERNAME_VAULT }}"
+    AUTOMATION_ANALYTICS_GATHER_INTERVAL: "3600"
 ...
