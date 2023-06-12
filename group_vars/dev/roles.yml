@@ -27,18 +27,18 @@ controller_roles_dev:
     role: execute
 
   - user: john
-    team: team_storage_dev_devconf
+    target_team: team_storage_dev_devconf
     role: member
-
+    
   - user: sita
-    team: team_unix_dev_devconf
+    target_team: team_unix_dev_devconf
     role: member
 
   - user: hanuman
-    team: team_storage_admin_devconf
+    target_team: team_storage_admin_devconf
     role: member
 
   - user: ram
-    team: team_unix_admin_devconf
+    target_team: team_unix_admin_devconf
     role: member
 ...
