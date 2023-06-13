@@ -1,9 +1,5 @@
 # Ansible Automation Platform Configuration as Code examples template
 
-This is a combination of all the Red Hat CoP Config as Code collections to deploy and configure AAP. This is built for multi environment (meaning multiple AAP instances/clusters). If you want an object across all environments put it in the correct file/list under the all group. If there is a specific object for only one environment then put it under that environments folder[^1].
-
-[^1]: If you only have/want one environment you could delete dev/test/prod folders in group_vars and remove all the _all added to vars in all group.
-
 You will need to replace the vault files with your own with these variables:
 
 ```yaml
@@ -21,39 +17,18 @@ vault_pass: 'the password to decrypt this vault'
 ...
 ```
 
-**_NOTE:_** Do not forget to update your inventory files replacing the `HERE` lines, if you do not have a `builder` server you can use `hub` for this. Also update `scm_url` in `group_vars/all/projects.yml` with your git URL.
 
-## Redhat Communities of Practice Configuration Collections Suite
+### Pre-requisites
 
-|Collection Name|Purpose|
-|:---:|:---:|
-|[Controller Configuration](https://galaxy.ansible.com/redhat_cop/controller_configuration)|Automation controller configuration|
-|[Hub Configuration](https://galaxy.ansible.com/redhat_cop/ah_configuration)|Automation hub configuration|
-|[EE Utilities](https://galaxy.ansible.com/redhat_cop/ee_utilities)|Execution Environment creation utilities|
-|[AAP installation Utilities](https://galaxy.ansible.com/redhat_cop/aap_utilities)|Ansible Automation Platform Utilities|
-|[AAP Configuration Template](https://github.com/redhat-cop/aap_configuration_template)|Configuration Template for this suite|
+1) Running 3 VMs(1 controller, 1 DB, 1 automationhub) for RHEL-8.6 
+2) ssh keys generated and exchagned in all 3 mahcines
+3) Run this as a root user.
 
-## controller config
+### To run this on Open TLC environment use below command :
 
-`ansible-playbook -i inventory_dev.yml -l dev playbooks/controller_config.yml --ask-vault-pass`
+1) Create new vaulted values with username and passwords for vaults and replace the values in vaults/opentlc.yml file
 
-## automation hub config
-
-`ansible-playbook -i inventory_dev.yml -l dev playbooks/hub_config.yml --ask-vault-pass`
-
-## custom ee
-
-currently doesn't work in CLI, expected to be run in Controller
-
-## custom collections
-
-currently doesn't work in CLI, expected to be run in Controller
-
-## aap utilities (aap installer)
-
-`ansible-playbook -i inventory_dev.yml playbooks/install_aap.yml --ask-vault-pass`
-
-Acquire your token at [redhat api](https://access.redhat.com/management/api/) see [access article](https://access.redhat.com/articles/3626371)
+`ansible-playbook --vault-id vaults/opentlc.yml -i inventory_opentlc.yml -l dev playbooks/controller_config_opentlc.yml --ask-vault-pass -e "env=opentlc" -e "no_log=false"`
 
 ## install and configure
 
@@ -61,16 +36,7 @@ Acquire your token at [redhat api](https://access.redhat.com/management/api/) se
 
 Acquire your token at [redhat api](https://access.redhat.com/management/api/) see [access article](https://access.redhat.com/articles/3626371)
 
+### Based on https://github.com/redhat-cop/aap_configuration_template
 
-### Pre-requisites
 
-1) Running 3 VMs(1 controller, 1 DB, 1 automationhub) for RHEL-8.6 
-2) ssh keys generated and exchagned in all 3 mahcines
-3) Run this as a root user.
-4) 
 
-### To run this on Open TLC environment use below command :
-
-1) Create new vaulted values with username and passwords for vaults and replace the values in vaults/opentlc.yml file
-
-`ansible-playbook --vault-id vaults/opentlc.yml -i inventory_opentlc.yml -l dev playbooks/controller_config_opentlc.yml --ask-vault-pass -e "env=opentlc" -e "no_log=false"`
