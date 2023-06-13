@@ -30,7 +30,7 @@ vault_pass: 'the password to decrypt this vault'
 
 `ansible-playbook --vault-id vaults/opentlc.yml -i inventory_opentlc.yml -l dev playbooks/controller_config_opentlc.yml --ask-vault-pass -e "env=opentlc" -e "no_log=false"`
 
-## install and configure
+## Install and configure Controller and Hub
 
 `ansible-playbook -i inventory_dev.yml -l dev playbooks/install_configure.yml --ask-vault-pass -e "env=dev"`
 
