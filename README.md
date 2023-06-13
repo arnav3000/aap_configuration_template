@@ -1,9 +1,11 @@
 # DevConf 2023 - Good Practices and Security for your Ansible Automation Platform-2
 
+### Pre-requisites
 
-## Ansible Automation Platform Configuration as Code examples template
-
-You will need to replace the vault files with your own with these variables:
+1) Running 3 VMs(1 controller, 1 DB, 1 automationhub) for RHEL-8.6 
+2) ssh keys generated and exchagned in all 3 mahcines
+3) Run this as a root user
+4) Once your VM's are running, Replace the vault files with your own with these variables:
 
 ```yaml
 ---
@@ -19,14 +21,6 @@ ah_pass: 'hub admin account pass, if none is given it will default to Password12
 vault_pass: 'the password to decrypt this vault'
 ...
 ```
-
-
-### Pre-requisites
-
-1) Running 3 VMs(1 controller, 1 DB, 1 automationhub) for RHEL-8.6 
-2) ssh keys generated and exchagned in all 3 mahcines
-3) Run this as a root user.
-
 ### To run this on Open TLC environment use below command :
 
 1) Create new vaulted values with username and passwords for vaults and replace the values in vaults/opentlc.yml file
