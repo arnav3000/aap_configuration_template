@@ -28,4 +28,14 @@ controller_templates_dev:
       # for debugging errors with creds change to false
       controller_configuration_credentials_secure_logging: true
 
+  - name: jt_failure_message_rhel86
+    project: devconf_prj_role
+    playbook: failed_services_rhel86.yml
+    inventory: devconf_test
+    execution_environment: 'Control Plane Execution Environment'
+    concurrent_jobs_enabled: false
+    ask_variables_on_launch: false
+    verbosity: 0
+    credentials:
+      - aap_admin
 ...
