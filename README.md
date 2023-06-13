@@ -33,6 +33,10 @@ vault_pass: 'the password to decrypt this vault'
 
 Acquire your token at [redhat api](https://access.redhat.com/management/api/) see [access article](https://access.redhat.com/articles/3626371)
 
+### Desiging Repos for Configuration as Code
+![Screenshot 2023-06-13 at 14 37 20](https://github.com/arnav3000/aap_configuration_template/assets/105802773/7bc6ca28-b7c7-47b9-abae-d30eb46e77ce)
+
+
 ### 
 Based on https://github.com/redhat-cop/aap_configuration_template
 
