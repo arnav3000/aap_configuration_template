@@ -22,16 +22,22 @@ controller_workflows_dev:
         unified_job_template: jt_disable_root_login_devconf
         success_nodes:
           - jt_configure_firewall_devconf
+        failure_nodes:
+          - jt_failure_message_devconf
 
       - identifier: jt_configure_firewall_devconf
         unified_job_template: jt_configure_firewall_devconf
         success_nodes:
           - jt_disable_unused_services_devconf
+        failure_nodes:
+          - jt_failure_message_devconf
 
       - identifier: jt_disable_unused_services_devconf
         unified_job_template: jt_disable_unused_services_devconf
         success_nodes:
           - jt_update_packages_devconf
+        failure_nodes:
+          - jt_failure_message_devconf
 
       - identifier: jt_update_packages_devconf
         unified_job_template: jt_update_packages_devconf
