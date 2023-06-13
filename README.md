@@ -23,19 +23,20 @@ vault_pass: 'the password to decrypt this vault'
 ```
 ### To run this on Open TLC environment use below command :
 
-1) Create new vaulted values with username and passwords using below command.
-
----
-`ansible-vault encrypt_string test`
----
+1) Create new vaulted values with username and passwords
 
 2) Replace the generated vaulted values in vaults/opentlc.yml file
 
 3) Run below command to configure your automation controller.
 
+```yaml
 ---
-`ansible-playbook --vault-id vaults/opentlc.yml -i inventory_opentlc.yml -l dev playbooks/controller_config_opentlc.yml --ask-vault-pass -e "env=opentlc" -e "no_log=false"`
+ansible-vault encrypt_string test
+
+ansible-playbook --vault-id vaults/opentlc.yml -i inventory_opentlc.yml -l dev playbooks/controller_config_opentlc.yml --ask-vault-pass -e "env=opentlc" -e "no_log=false"
 ---
+...
+```
 
 ## Install and configure Controller and Hub
 
