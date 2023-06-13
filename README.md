@@ -36,7 +36,8 @@ vault_pass: 'the password to decrypt this vault'
 
 Acquire your token at [redhat api](https://access.redhat.com/management/api/) see [access article](https://access.redhat.com/articles/3626371)
 
-### Based on https://github.com/redhat-cop/aap_configuration_template
+### 
+Based on https://github.com/redhat-cop/aap_configuration_template
 
 
 
