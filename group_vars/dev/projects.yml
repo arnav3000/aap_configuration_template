@@ -9,7 +9,7 @@ controller_projects_dev:
     scm_clean: true
     scm_update_on_launch: false
     scm_credential: ""
-    update_project: false
+    update_project: true
     wait: true
 
   - name: devconf_prj_role
@@ -21,6 +21,6 @@ controller_projects_dev:
     scm_clean: true
     scm_update_on_launch: false
     scm_credential: ""
-    update_project: false
+    update_project: true
     wait: true
 ...
