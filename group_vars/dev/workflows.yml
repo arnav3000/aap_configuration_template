@@ -11,6 +11,8 @@ controller_workflows_dev:
         unified_job_template: jt_configure_webserver_rhel86
         success_nodes:
           - jt_configure_services_rhel86
+        failed_nodes:
+          - jt_failure_message_rhel86
       - all_parents_must_converge: false
         identifier: jt_configure_services_rhel86
         unified_job_template: jt_configure_services_rhel86
