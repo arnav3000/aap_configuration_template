@@ -2,29 +2,17 @@
 controller_workflows_dev:
   - name: Simple workflow schema
     description: a basic workflow
-#     extra_vars: {}
-#     survey_enabled: false
-#     allow_simultaneous: false
-#     ask_variables_on_launch: false
     inventory: devconf_test
     state: present
-    limit:
-#    labels:
-#      - Dev
-#     scm_branch:
-#     ask_inventory_on_launch: false
-#     ask_scm_branch_on_launch: false
-#     ask_limit_on_launch: false
     organization: org_unix
-#     schedules: []
     simplified_workflow_nodes:
       - all_parents_must_converge: false
-        identifier: node101
+        identifier: jt_configure_webserver_rhel86
         unified_job_template: jt_configure_webserver_rhel86
         success_nodes:
-          - node201
+          - jt_configure_services_rhel86
       - all_parents_must_converge: false
-        identifier: node201
+        identifier: jt_configure_services_rhel86
         unified_job_template: jt_configure_services_rhel86
 #     notification_templates_started: []
 #     notification_templates_success: []
