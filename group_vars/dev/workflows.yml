@@ -1,23 +1,18 @@
 ---
 controller_workflows_dev:
-  - name: wt_devconf_test_workflow
+  - name: Devconf Test Workflow
     description: a testing workflow to demonstrate a working workflow
     inventory: devconf_test
     state: present
     organization: org_unix
-
-######### Creating Workflow nodes #######
-tower_config_workflow_template_nodes:
-
-  - name: jt_configure_webserver_rhel86
-    workflow: wt_devconf_test_workflow
-    success_nodes: jt_configure_services_rhel86
-  
-  - name: jt_configure_services_rhel86
-    workflow: wt_devconf_test_workflow
-    success_nodes: jt_configure_services_rhel86
-    failure_nodes: jt_failure_message_rhel86
-
-  - name: jt_failure_message_rhel86
-    workflow: wt_devconf_test_workflow
-
+    simplified_workflow_nodes:
+      - all_parents_must_converge: false
+        identifier: jt_configure_webserver_rhel86
+        unified_job_template: jt_configure_webserver_rhel86
+        success_nodes:
+          - jt_configure_services_rhel86
+        failed_nodes:
+          - jt_failure_message_rhel86
+      - all_parents_must_converge: false
+        identifier: jt_configure_services_rhel86
+        unified_job_template: jt_configure_services_rhel86
