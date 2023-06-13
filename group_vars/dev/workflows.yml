@@ -9,8 +9,8 @@ controller_workflows_dev:
     inventory: devconf_test
     state: present
     limit:
-    labels:
-      - Dev
+#    labels:
+#      - Dev
 #     scm_branch:
 #     ask_inventory_on_launch: false
 #     ask_scm_branch_on_launch: false
