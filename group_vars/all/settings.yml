@@ -4,4 +4,7 @@ controller_settings_all:
     GALAXY_IGNORE_CERTS: true
     REDHAT_USERNAME: "{{ REDHAT_USERNAME_VAULT }}"
     AUTOMATION_ANALYTICS_GATHER_INTERVAL: "3600"
+    AD_HOC_COMMANDS:
+      - shell
+      - ping
 ...
