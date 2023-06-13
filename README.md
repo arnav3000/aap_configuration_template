@@ -1,4 +1,7 @@
-# Ansible Automation Platform Configuration as Code examples template
+# DevConf 2023 - Good Practices and Security for your Ansible Automation Platform-2
+
+
+## Ansible Automation Platform Configuration as Code examples template
 
 You will need to replace the vault files with your own with these variables:
 
