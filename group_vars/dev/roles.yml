@@ -32,11 +32,11 @@ controller_roles_dev:
     organization: org_storage
     role: execute
 
-  - teams: team_storage_dev_devconf
+  - team: team_storage_dev_devconf
     organization: org_storage
     role: execute
 
-  - teams: team_storage_dev_devconf
+  - team: team_storage_dev_devconf
     job_templates:
       - jt_configure_webserver_rhel86
       - jt_configure_services_rhel86
