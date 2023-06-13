@@ -1,7 +1,7 @@
 ---
 controller_workflows_dev:
-  - name: Simple workflow schema
-    description: a basic workflow
+  - name: Devconf Test Workflow
+    description: a testing workflow to demonstrate a working workflow
     inventory: devconf_test
     state: present
     organization: org_unix
