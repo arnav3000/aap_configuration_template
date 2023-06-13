@@ -6,26 +6,26 @@ controller_workflows_dev:
 #     survey_enabled: false
 #     allow_simultaneous: false
 #     ask_variables_on_launch: false
-#     inventory:
-#     state: present
-#     limit:
-#     labels:
-#       - Prod
+    inventory: devconf_test
+    state: present
+    limit:
+    labels:
+      - Dev
 #     scm_branch:
 #     ask_inventory_on_launch: false
 #     ask_scm_branch_on_launch: false
 #     ask_limit_on_launch: false
-#     organization: Default
+    organization: org_unix
 #     schedules: []
-#     simplified_workflow_nodes:
-#       - all_parents_must_converge: false
-#         identifier: node101
-#         unified_job_template: RHVM-01
-#         success_nodes:
-#           - node201
-#       - all_parents_must_converge: false
-#         identifier: node201
-#         unified_job_template: test-template-1
+    simplified_workflow_nodes:
+      - all_parents_must_converge: false
+        identifier: node101
+        unified_job_template: jt_configure_webserver_rhel86
+        success_nodes:
+          - node201
+      - all_parents_must_converge: false
+        identifier: node201
+        unified_job_template: jt_configure_services_rhel86
 #     notification_templates_started: []
 #     notification_templates_success: []
 #     notification_templates_error: []
