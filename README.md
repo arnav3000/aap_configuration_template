@@ -25,17 +25,23 @@ vault_pass: 'the password to decrypt this vault'
 
 1) Create new vaulted values with username and passwords using below command.
 
+---
 `ansible-vault encrypt_string test`
+---
 
 2) Replace the generated vaulted values in vaults/opentlc.yml file
 
 3) Run below command to configure your automation controller.
 
+---
 `ansible-playbook --vault-id vaults/opentlc.yml -i inventory_opentlc.yml -l dev playbooks/controller_config_opentlc.yml --ask-vault-pass -e "env=opentlc" -e "no_log=false"`
+---
 
 ## Install and configure Controller and Hub
 
+---
 `ansible-playbook -i inventory_dev.yml -l dev playbooks/install_configure.yml --ask-vault-pass -e "env=dev"`
+---
 
 Acquire your token at [redhat api](https://access.redhat.com/management/api/) see [access article](https://access.redhat.com/articles/3626371)
 
