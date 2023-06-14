@@ -5,6 +5,6 @@ controller_settings_all:
     REDHAT_USERNAME: "{{ REDHAT_USERNAME_VAULT }}"
     AUTOMATION_ANALYTICS_GATHER_INTERVAL: "3600"
     AD_HOC_COMMANDS:
-      - shell
+      - win_ping
       - ping
 ...
