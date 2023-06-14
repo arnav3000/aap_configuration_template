@@ -54,4 +54,10 @@ Acquire your token at [redhat api](https://access.redhat.com/management/api/) se
 Based on https://github.com/redhat-cop/aap_configuration_template
 
 
+#### NOTE
+
+Below are required to be changed with new password :
+- ah_password, controller_pass and controller_api_user_pass
+
+
 
