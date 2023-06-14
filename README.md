@@ -56,8 +56,8 @@ Based on https://github.com/redhat-cop/aap_configuration_template
 
 #### NOTE
 
-Below are required to be changed with new password :
-- ah_password, controller_pass and controller_api_user_pass
+Below are required to be changed with new vaulted value when creating a new vault file for a new environment :
+- ah_password, controller_pass and controller_api_user_pass, ah_token_username, ah_token_password
 
 
 
