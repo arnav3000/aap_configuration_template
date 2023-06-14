@@ -1,0 +1,28 @@
+---
+all:
+  children:
+    dev:
+      hosts:
+        127.0.0.1:
+      vars:
+        connection: local
+    automationcontroller:
+      hosts:
+        student1.89t7d.example.opentlc.com:
+
+    automationhub:
+      hosts:
+        hub-student.89t7d.example.opentlc.com:
+
+    # can be automationhub if you do not have a specific server for this
+    builder:
+      hosts:
+        HERE:
+
+    # only needed if installing AAP with automation, can be removed if you are not
+    database:
+      hosts:
+        192.168.0.13:
+  vars:
+    env: dev
+...
