@@ -8,11 +8,11 @@ all:
         connection: local
     automationcontroller:
       hosts:
-        student1.89t7d.example.opentlc.com:
+        student1.vkwd6.example.opentlc.com:
 
     automationhub:
       hosts:
-        hub-student.89t7d.example.opentlc.com:
+        hub-student.vkwd6.example.opentlc.com:
 
     # can be automationhub if you do not have a specific server for this
     builder:
